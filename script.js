@@ -2,17 +2,17 @@ document.getElementById('pa').onclick = temp;
 document.getElementById('si').onclick = clear;
 
 function temp() {
-    var fuck = document.getElementById("far").value;
-    var suck = document.getElementById("cel").value;
+    var f = document.getElementById("far").value;
+    var s = document.getElementById("cel").value;
 
-    if (fuck !== '') {
-        suck = (parseFloat(fuck) - 32) / 1.8;
+    if (f !== '') {
+        s = (parseFloat(f) - 32) / 1.8;
     } else {
-        fuck = parseFloat(suck) * 1.8 + 32;
+        f = parseFloat(s) * 1.8 + 32;
     }
 
-    document.getElementById('far').value = parseFloat(fuck).toFixed(1);
-    document.getElementById('cel').value = parseFloat(suck).toFixed(1);
+    document.getElementById('far').value = parseFloat(f).toFixed(1);
+    document.getElementById('cel').value = parseFloat(s).toFixed(1);
 }
 
 function clear() {
